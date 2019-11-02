@@ -137,10 +137,7 @@ function processProduct(num1, num2, cb) {
  * should return "sad".
 */
 function processContains(item, list, cb) {
-  const included = function (item, list){
-    return list.includes(item);
-  }
-  return cb (included)
+  return cb (list.includes(item));
 }
 
 /**
