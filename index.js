@@ -140,7 +140,7 @@ function processContains(item, list, cb) {
   const included = function (item, list){
     return list.includes(item);
   }
-  return cb (included);
+  return cb (included)
 }
 
 /**
