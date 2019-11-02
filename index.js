@@ -136,8 +136,11 @@ function processProduct(num1, num2, cb) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
-  /* CODE HERE */
+function processContains(item, list, cb) {
+  const included = function (item, list){
+    return list.includes(item);
+  }
+  return cb (included);
 }
 
 /**
