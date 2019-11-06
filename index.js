@@ -224,8 +224,8 @@ function firstNamesAllCaps(runners) {
 */
 function getRunnersByTShirtSize(runners, tShirtSize) {
   return runners.filter(
-    function (runners, tShirtSize){
-      return runners.shirt_size === tShirtSize;
+    function (runner){
+      return runner.shirt_size === tShirtSize;
     }
   )
 }
